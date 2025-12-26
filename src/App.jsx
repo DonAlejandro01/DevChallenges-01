@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./App.css";
+import Articulo from "./Components/Article.jsx";
+import Separador from "./assets/resources/Seperator.svg"
+import Img1 from "./assets/resources/photo_1.png"
+import Img2 from "./assets/resources/photo_2.png"
+import Img3 from "./assets/resources/photo_3.png"
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main>  
+
+      <h1>We release interesting articles 
+        about technology</h1>
+      <img className="Separador" src={Separador} />
+      <div className="container">
+        
+      <Articulo
+        info="imagen de nubes"
+        title="Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions"
+        date="November 12, 2024"
+        img={Img1}
+      />
+      <Articulo
+        info="Imagen de mundo verde con flores"
+        title="The Future of AI: How Machine Learning is Revolutionizing Industries"
+        date="November 12, 2024"
+        img={Img2}
+      />
+      <Articulo
+        info="imagen de nubes"
+        title="The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work"
+        date="November 12, 2024"
+        img={Img3}
+      />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </main>
+      <footer>
+        <a href="https://github.com/DonAlejandro01?tab=repositories">Alejandro Perez</a>
+      </footer>
     </>
-  )
+    
+  );
 }
 
-export default App
+export default App;

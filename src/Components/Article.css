@@ -1,0 +1,43 @@
+.informacion {
+  width: 100%;
+  padding: 0.5rem;
+  img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+  }
+  div{
+    width: 60%;
+  }
+  div h2 {
+    
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  div p {
+    font-weight: 200;
+    font-size: 0.6rem;
+    margin-top: 1rem;
+  }
+}
+
+@media(min-width:1024px){
+  .informacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      margin-left: 3rem;
+    }
+    div h2{
+      margin-top: 0;
+    }
+   
+  }
+}
+
+
