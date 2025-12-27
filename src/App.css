@@ -31,7 +31,7 @@ footer{
     }
 }
 
-@media(min-width:1024px){
+@media(min-width:768px){
   h1{
     width: 50%;
   }
